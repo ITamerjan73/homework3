@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <title>Passsword Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Passsword Generator</h2>
+        <div class="result-container">
+        <span id="result"></span> 
+        <button class="btn" id="clipboard">
+            <i class="far fa-clipboard"></i>
+        </button> 
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Passsword length</label>
+                <input type="number" id="length" min="4" max="20"
+                value="20" /> 
+            </div>
+            <div class="setting">
+              <label for="uppercase">include uppercase letters</label> 
+              <input type="checkbox" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label for="lowecase">include lowecase letters</label>
+                <input type="checkbox" id="numbers" checked /> 
+                <div class="setting">
+
+                    <div class="setting"></div>
+                    <label for="symbole">include number</label>
+                    <input type="checkbox" id="symbols" checked />
+            </div>
+            <div class="setting">
+                <label for="symbole">include symbole</label>
+                <input type="checkbox" id="symbols" checked />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            generate Passsword
+        </button>
+        </div>
+</body>
+</html>
